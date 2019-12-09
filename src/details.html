@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快乐购-商品详情</title>
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+<div class="top">
+        <div class="margin">
+            <div class="t-l">
+            <span>欢迎来到快乐购！</span>
+            <a href="#" class="a-log">[登录]</a>
+            <a href="#" class="a-reg">[免费注册]</a>
+        </div>
+        <div class="t-r">
+            <ul>
+                <li>
+                    <a href="#">合作招商</a>
+                    <span class="line">|</span>
+                </li>
+                <li>
+                    <a href="#">订单查询</a>
+                    <span class="line">|<span>
+                </li>
+                <li>
+                    <a href="#">我的快乐购</a>
+                    <span class="line">|<span>
+                </li>
+                <li>
+                    <i class="tel_icon"></i>
+                    <span class="sp_tel">400-705-1111</span>
+                    <span class="line">|<span>
+                </li>
+                <li>
+                    <a href="#">下载快乐购app</a>
+                    <span class="line">|<span>
+                </li>
+                <li>
+                    <a href="#">客服中心</a>
+                    <div class="cus_center" style="display: none;">
+                            <a href="#">帮助中心</a>
+                            <a href="#">会员反馈</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="margin">
+            <div class="h-logo">
+                <a href="#" class="logo_img"><img src="img/logo.png"/></a>
+                <a href="#" class="new_img"><img src="img/06107330966087078.png"/></a>
+            </div>
+                <div class="h-search">
+                    <div class="search-input">
+                        <i class="icon"></i>
+                        <form id="form1">
+                            <input type="hidden" value="search" id="search_act1" name="act" />
+                            <input type="hidden" value="index" id="search_act" name="op" />
+                            <input autocomplete="off" hc="面膜" placeholder="面膜" id="keyword" class="txt_searchbox" type="text" name="keyword" value="" />
+                            <input onclick="clicktotrace('Search','index')" class="btn_search" type="button" value="搜索" />
+                        </form>
+                    </div>
+                    <div class="search_key">
+                        <a href="#" target="_blank" title="利维·斯顿">利维·斯顿</a>
+                        <a href="#" target="_blank" title="空调被">空调被</a>
+                        <a  href="#" target="_blank" title="抽纸">
+                            <span style="color:#f00">抽纸</span>            				
+                        </a>
+                        <a  href="#" target="_blank" title="金骏眉">金骏眉</a>
+                        <a href="#" target="_blank" title="牛尔">牛尔</a>
+                        <a href="#" target="_blank" title="大牌口红">
+                            <span style="color:#f00">大牌口红</span>            				</a>
+                        <a href="#" target="_blank" title="坚果">坚果</a>
+                        <a href="#" target="_blank" title="眼霜">眼霜</a>
+                    </div>
+                </div>
+                <div class="h_c_right">
+                        <a href="#" class="h_c_r_car">
+                            <i class="iconfont_car iconfont">&#xe61a;</i>
+                            <span>购物车</span>
+                        </a>   
+                    </div>   
+    </div>
+</div>
+<div id="nav">
+        <div class="margin clear">
+            <div class="nav-l">
+                <h4><i class="iconfont b_down"></i>所有分类</h4>
+                <ul class="ul-all">
+                        <li class="list te1">
+                            <a href="#"><i class="i1"></i>个护美妆</a>
+                            <div class="pro">
+                                    <div class="pro-l">
+                                            <dl>
+                                            <dt>面部护理</dt>
+                                            <dd>面膜</dd>
+                                            <dd>精华</dd>
+                                            <dd>护肤套组</dd>
+                                            <dd>防晒隔离</dd>
+                                            <dd>爽肤水</dd>
+                                            <dd>洁面乳</dd>
+                                            <dd>眼部护理</dd>
+                                            <dd>眼膜</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>香水彩妆</dt>
+                                            <dd>唇膏唇彩</dd>
+                                            <dd>遮瑕</dd>
+                                            <dd>粉底粉饼</dd>
+                                            <dd>睫毛膏</dd>
+                                            <dd>眉笔</dd>
+                                            <dd>眼影/眼线</dd>
+                                            <dd>彩妆工具</dd>
+                                            <dd>卸妆</dd>
+                                            <dd>女士香水</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>美发护发</dt>
+                                            <dd>洗发水</dd>
+                                            <dd>洗护套装</dd>
+                                            <dd>卷发棒</dd>
+                                            <dd>电吹风</dd>
+                                            <dd>染发</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>身体护理</dt>
+                                            <dd>手工皂</dd>
+                                            <dd>美容养颜</dd>
+                                            <dd>磨砂膏</dd>
+                                            <dd>沐浴露</dd>
+                                            <dd>手足护理</dd>
+                                            <dd>身体乳</dd>
+                                            <dd>香薰精油</dd>
+                                            <dd>卫生巾</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>美容工具</dt>
+                                            <dd>美容仪</dd>
+                                            <dd>洁面仪</dd>
+                                            <dd>理发器</dd>
+                                            <dd>剃须刀</dd>
+                                            <dd>喷雾器</dd>
+                                            <dd>美容配器</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>口腔护理</dt>
+                                            <dd>牙膏</dd>
+                                            <dd>牙刷</dd>
+                                        </dl>
+                                    </div>
+                        </li >
+                        <li class="list">
+                            <a href="#"><i class="i2"></i>食品健康</a>
+                            <div class="pro">
+                                    <div class="pro-l">
+                                            <dl>
+                                            <dt>饮料冲调</dt>
+                                            <dd>牛奶/酸奶</dd>
+                                            <dd>麦片</dd>
+                                            <dd>蜂蜜</dd>
+                                            <dd>冲调饮品</dd>
+                                            <dd>红糖/黑糖</dd>
+                                            <dd>咖啡</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>粮油调味</dt>
+                                            <dd>米面</dd>
+                                            <dd>五谷</dd>
+                                            <dd>食用油</dd>
+                                            <dd>速食食品</dd>
+                                            <dd>南北干货</dd>
+                                            <dd>调料</dd>
+                                            <dd>腊味</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>酒水茗茶</dt>
+                                            <dd>白酒</dd>
+                                            <dd>进口红酒</dd>
+                                            <dd>国产红酒</dd>
+                                            <dd>啤酒</dd>
+                                            <dd>黑茶/普洱</dd>
+                                            <dd>红茶/绿茶</dd>
+                                            <dd>花草茶</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>休闲食品</dt>
+                                            <dd>坚果/果干</dd>
+                                            <dd>饼干糕点</dd>
+                                            <dd>糖果/巧克力</dd>
+                                            <dd>零食</dd>
+                                            <dd>麻辣零食</dd>
+                                            <dd>身体乳</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>营养保健</dt>
+                                            <dd>红枣/枸杞</dd>
+                                            <dd>女性保养</dd>
+                                            <dd>阿胶/燕窝</dd>
+                                            <dd>传统滋补</dd>
+                                            <dd>基础保健</dd>
+                                            <dd>瘦身/酵素</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>生鲜食品</dt>
+                                            <dd>新鲜果蔬</dd>
+                                            <dd>肉类</dd>
+                                            <dd>家禽蛋类</dd>
+                                            <dd>大闸蟹</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="list">
+                            <a href="#"><i class="i3"></i>餐厨日用</a>
+                            <div class="pro">
+                                    <div class="pro-l">
+                                            <dl>
+                                            <dt>厨房电器</dt>
+                                            <dd>保温板</dd>
+                                            <dd>净水设备</dd>
+                                            <dd>烤箱/微波炉</dd>
+                                            <dd>电饭煲</dd>
+                                            <dd>炉具</dd>
+                                            <dd>榨汁/原汁机</dd>
+                                            <dd>料理/研磨机</dd>
+                                            <dd>破壁/豆浆机</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>烹饪锅具</dt>
+                                            <dd>透明锅</dd>
+                                            <dd>炒锅/煎锅</dd>
+                                            <dd>汤锅/奶锅</dd>
+                                            <dd>大牌锅具</dd>
+                                            <dd>高速快锅</dd>
+                                            <dd>煲</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>健康保健</dt>
+                                            <dd>健身用品</dd>
+                                            <dd>保健按摩</dd>
+                                            <dd>运动电子</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>清洁收纳</dt>
+                                            <dd>清洁用品</dd>
+                                            <dd>收纳用品</dd>
+                                            <dd>晾晒置物</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>户外休闲</dt>
+                                            <dd>伞具</dd>
+                                            <dd>户外用品</dd>
+                                            <dd>背包</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>家具</dt>
+                                            <dd>家具</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="list">
+                            <a href="#"><i class="i5"></i>布艺家纺</a>
+                            <div class="pro">
+                                    <div class="pro-l">
+                                            <dl>
+                                            <dt>床品套件</dt>
+                                            <dd>枕头</dd>
+                                            <dd>套件</dd>
+                                            <dd>被子</dd>
+                                            <dd>床垫</dd>
+                                            <dd>凉席</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>布艺彩饰</dt>
+                                            <dd>窗帘</dd>
+                                            <dd>地垫</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>抱枕靠枕</dt>
+                                            <dd>抱枕</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>毛巾浴巾</dt>
+                                            <dd>毛巾</dd>
+                                            <dd>浴巾</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="list">
+                            <a href="#"><i class="i6"></i>家电数码</a>
+                            <div class="pro">
+                                    <div class="pro-l">
+                                            <dl>
+                                            <dt>生活家电</dt>
+                                            <dd>冷暖家电</dd>
+                                            <dd>清洁电器</dd>
+                                            <dd>照明电器</dd>
+                                            <dd>净化加湿器</dd>
+                                            <dd>健康电器</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>大家电</dt>
+                                            <dd>冰箱空调</dd>
+                                            <dd>洗衣机</dd>
+                                            <dd>电视机</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>手机通讯</dt>
+                                            <dd>智能手机</dd>
+                                            <dd>耳机音箱</dd>
+                                            <dd>数码配件</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>电脑影音</dt>
+                                            <dd>电脑</dd>
+                                            <dd>音响</dd>
+                                            <dd>电脑配件</dd>
+                                        </dl>
+                                        
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="list te2">
+                            <a href="#"><i class="i7"></i>品牌馆</a>
+                            <div class="pro">
+                                    <div class="pro-l">
+                                            <dl>
+                                            <dt>个护美妆</dt>
+                                            <dd>兰芝</dd>
+                                            <dd>韩蔻</dd>
+                                            <dd>兰蔻</dd>
+                                            <dd>森田</dd>
+                                            <dd>韩束</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>食品健康</dt>
+                                            <dd>恰然</dd>
+                                            <dd>益田</dd>
+                                            <dd>松德</dd>
+                                            <dd>花迹</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>餐厨日用</dt>
+                                            <dd>白鹰</dd>
+                                            <dd>康宁</dd>
+                                            <dd>摩飞</dd>
+                                            <dd>九阳</dd>
+                                            <dd>长帝</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>布艺家纺</dt>
+                                            <dd>泰嗨</dd>
+                                            <dd>富安娜</dd>
+                                            <dd>梦洁</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>家电数码</dt>
+                                            <dd>华为</dd>
+                                            <dd>苹果</dd>
+                                            <dd>格力</dd>
+                                            <dd>创维</dd>
+                                            <dd>美菱</dd>
+                                        </dl>
+                                        
+                                    </div>
+                                </div>
+                        </li>
+                    </ul>
+                    
+            </div>
+            <ul class="nav-c">
+                <li><a href="#" class="last">首页</a></li>
+                <li><a href="#">商品精选</a></li>
+                <li><a href="#">美妆控</a></li>
+                <li><a href="#">潮搭范</a></li>
+                <li><a href="#">美食家</a></li>
+                <li><a href="#">下厨房</a></li>
+            </ul>
+        </div>
+</div>
+<div id="main">
+    <div class="margin">
+        <div class="location">
+            <a href="https://www.happigo.com/shop">首页</a><span>></span>
+            <a href="https://www.happigo.com/list-1088/">食品健康</a><span>></span>
+            <a href="https://www.happigo.com/list-1095/">生鲜食品</a><span>></span>
+            <span>福生翡翠白虾仁 净重200g*9袋</span>
+        </div>
+        <div class="content">
+            <div class="con-t">
+                <div class="c-t-l">
+                     <div class="l-t">
+                         <div class="sBox">
+                            <img src="https://ecimg.happigo.com/data/upload/shop/store/goods/1/336/296836/1_06286180443730191_550.jpg" alt="">
+                            <span></span>
+                         </div> 
+                         <div class="bBox">
+                            <img src="https://ecimg.happigo.com/data/upload/shop/store/goods/1/336/296836/1_06286180443730191_550.jpg"/>
+                        </div>
+                    </div>
+                     
+                     <div class="l-c">
+                         <ul class="l-ul">
+                             <li><img src="https://ecimg.happigo.com/data/upload/shop/store/goods/1/336/296836/1_06286180443730191_550.jpg" alt=""></li>
+                             <li><img src="https://ecimg.happigo.com/data/upload/shop/store/goods/1/336/296836/1_06286034339696852_60.jpg" alt=""></li>
+                             <li><img src="https://ecimg.happigo.com/data/upload/shop/store/goods/1/336/296836/1_06286034380364487_60.jpg" alt=""></li>
+                             <li><img src="https://ecimg.happigo.com/data/upload/shop/store/goods/1/336/296836/1_06286034436583262_60.jpg" alt="" srcset=""></li>
+                         </ul>
+                     </div>
+                     <!-- <div class="l-b">
+                        <p>编号：9296836</p>
+                        <i class="i_addsc">收藏商品</i>    
+                    </div> -->
+                </div>
+                <div class="c-t-r">
+                    <h1 class="r-t"><span class="sp_hot"><em class="em_l">[</em>原产地捕捞 活虾现冻<em class="em_r">]</em></span>福生翡翠白虾仁 净重200g*9袋</h1>
+                    <h2 class="r-md">虾是大家餐桌上必不可少的食材，虾不仅肉质鲜美，而且虾中含有丰富的氨基酸、钙、蛋白质等。这款白虾仁，是南美白对虾，它繁殖的水域干净，没有污染，养殖出来的虾更加绿色，虾仁去壳去头后，饱满细嫩，晶莹剔透，肉质紧实，全程冷链，保持虾仁的鲜美口感哦~</h2>
+                    <div class="price_wrap">
+                        <div class="detail_price clearfix">
+                            <span class="pop_tit title1">快乐价</span>
+                            <div class="price_box">
+                                <span class="price_now" style="color:#DF0010"><em class="em_sign">¥ </em>299.00</span>
+                                    <span><del>￥399.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_freight ClearFix">
+                        <span class="pop_tit ">运费</span>
+                        <span id="freight" class="pop_black">包邮</span>
+                    </div>
+                    <div class=""></div>  
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+    <div class="margin">
+        <div class="foot-t">
+            <ul class="foot-ul">
+                <li>
+                    <i class="i1"></i>
+                    <h3>成功上市</h3>
+                    <p>股票代码300413</p>
+                </li>
+                <li>
+                    <i class="i2"></i>
+                    <h3>快乐购严选</h3>
+                    <p>正品行货 品质保证</p>
+                </li>
+                <li>
+                    <i class="i3"></i>
+                    <h3>15天无理由退款</h3>
+                    <p>为您提供售后无忧保障</p>
+                </li>
+                <li>
+                    <i class="i4"></i>
+                    <h3>满129包邮</h3>
+                    <p>在线支付 购物包邮</p>
+                </li>
+                <li>
+                    <i class="i5"></i>
+                    <h3>24小时微笑服务</h3>
+                    <p>365*24小时人工服务</p>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-b">
+            <div class="dl">
+                <dl>
+                    <dt><h5>使用帮助</h5></dt>
+                    <dd>税费收取规则</dd>
+                    <dd>新手指南</dd>
+                    <dd>常见问题</dd>
+                    <dd>用户协议</dd>
+                </dl>
+                <dl>
+                    <dt><h5>会员服务</h5></dt>
+                    <dd>快乐币政策</dd>
+                    <dd>会员权益</dd>
+                    <dd>会员等级</dd>
+                </dl>
+                <dl>
+                    <dt><h5>支付方式</h5></dt>
+                    <dd>快乐币支付</dd>
+                    <dd>货到付款</dd>
+                    <dd>在线支付</dd>
+                    <dd>优惠券支付</dd>
+                </dl>
+                <dl>
+                    <dt><h5>配送方法</h5></dt>
+                    <dd>费用说明</dd>
+                    <dd>配送说明</dd>
+                    <dd>包邮政策</dd>
+                </dl>
+                <dl>
+                    <dt><h5>售后服务</h5></dt>
+                    <dd>电子发票</dd>
+                    <dd>退货办理</dd>
+                    <dd>退货政策</dd>
+                    <dd>售后咨询</dd>
+                </dl>
+            </div>
+            <div class="foot-r">
+                <ul>
+                    <li>
+                        <h2>手机快乐购</h2>
+                        <img src="img/telhappy.png" alt="">
+                        <p>下载移动客户端</p>
+                    </li>
+                    <li>
+                        <h2>快乐购微信</h2>
+                        <img src="img/happyweixin.png" alt="">
+                        <p>快乐购微信</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div id="bottom">
+    <div class="margin">
+        <div class="bottom-t">
+            <ul>
+                <li>
+                    <a href="#">关于快乐购</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#">投资者关系</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#">自营品牌招商</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#">营业执照</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-b">
+            <p class="b-t">Copyright© 2006-2018 happigo. All Rights Reserved </p>
+            
+            <p class="b-c">
+                免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800<span >E-Mail: service@happigo.com</span><br>
+                <a href="#" style="color: #C8C8C8" >湘ICP备19013404号-2</a>
+                <img src="img/jh.png">
+                <a href="#" style="color: #C8C8C8" >湘公网安备 43010502000556号</a>
+                <a href="#" style="color: #C8C8C8" >食品经营许可证 JY14301000273760</a>
+            </p>
+
+            <p class="b-b">
+                <a href="#"><img src="img/footer_pinpai.jpg" alt=""></a>
+                <a href="#"><img src="img/footer_shuidi.png" alt=""></a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="libs/jquery.js"></script>
+<script src="js/index.js"></script>
+<script src="js/details.js"></script>
+<script src="js/public.js"></script>
+<script>
+class Magnifier{
+			constructor(){
+                this.sBox = document.querySelector(".sBox");
+                this.ct=document.querySelector(".c-t-l")
+				this.sSpan = document.querySelector(".sBox span");
+				this.bBox = document.querySelector(".bBox");
+				this.bImg = document.querySelector(".bBox img");
+
+				this.init()
+			}
+			init(){
+				var that = this;
+				this.sBox.onmouseover = function(){
+
+					that.over()
+				}
+
+				this.sBox.onmousemove = function(eve){
+					var e = eve || window.event;
+
+					that.move(e)
+				}
+
+				this.sBox.onmouseout = function(){
+
+					that.out()
+				}
+			}
+			over(){
+
+				this.sSpan.style.display = "block";
+				this.bBox.style.display = "block";
+
+				this.sSpanW = (this.bBox.offsetWidth / this.bImg.offsetWidth * this.sBox.offsetWidth);
+				this.sSpanH = (this.bBox.offsetHeight / this.bImg.offsetHeight * this.sBox.offsetHeight);
+
+				this.sSpan.style.width = this.sSpanW + "px";
+				this.sSpan.style.height = this.sSpanH + "px";
+				
+
+				this.sW = this.sBox.offsetWidth;
+				this.sH = this.sBox.offsetHeight;
+
+				this.bW = this.bBox.offsetWidth;
+				this.bH = this.bBox.offsetHeight;
+
+				this.bImgW = this.bImg.offsetWidth;
+				this.bImgH = this.bImg.offsetHeight;
+			}
+			move(e){
+				var l = e.clientX - this.ct.offsetLeft - this.sSpan.offsetWidth/2;
+				var t = e.clientY - this.ct.offsetTop ;
+                // console.log(this.ct.offsetTop)
+
+				if(l<0) l=0;
+				if(t<0) t=0;
+				if(l>this.sW - this.sSpanW){
+					l = this.sW - this.sSpanW;
+				}
+				if(t>this.sH - this.sSpanH){
+					t = this.sH - this.sSpanH;
+				}
+
+				this.sSpan.style.left = l + "px";
+				this.sSpan.style.top = t + "px";
+
+				this.bImg.style.left = l / (this.sW - this.sSpanW) * (this.bW - this.bImgW) + "px";
+				this.bImg.style.top = t / (this.sH - this.sSpanH) * (this.bH - this.bImgH) + "px";
+			}
+			out(){
+
+				this.sSpan.style.display = "none";
+				this.bBox.style.display = "none";
+			}
+		}
+		
+		new Magnifier();
+</script>
+</html>
