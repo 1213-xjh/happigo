@@ -10,6 +10,7 @@
             this.url2="http://localhost:83/json/index2.json";
             this.url3="http://localhost:83/json/index3.json";
             this.load();
+            this.addEvent()
         }
         load(){
             var that=this
@@ -33,21 +34,22 @@
         display1(){
             var str=""
             for(var i=0;i<this.res.length;i++){
-                str +=`<li index="${this.res[i].sId}>
-                            <a href="#"><img src="${this.res[i].img}" alt=""></a>
+                str +=`<li index="${this.res[i].sId}">
+                            <a href="../details.html"><img src="${this.res[i].img}" alt=""></a>
                             <div>
-                                <p><a href="#">${this.res[i].name}</a></p>
+                                <p><a href="../details.html">${this.res[i].name}</a></p>
                                 <span>￥</span><span>${this.res[i].price}</span><i>${this.res[i].except}</i>
-                                <em class="order"><a href="../details.html" style="color:#fff">立即订购<a></em>
+                                <em class="qq">立即订购</em>
                             </div>
                         </li>`
             }
             this.cont.innerHTML=str;   
+            
         }
         display2(){
             var str=""
             for(var i=0;i<this.res.length;i++){
-                str +=`<li index="${this.res[i].sId}>
+                str +=`<li index="${this.res[i].sId}">
                             <a href="#"><img src="${this.res[i].img}" alt=""></a>
                             <div>
                                 <em>${this.res[i].reffal}</em>
@@ -61,7 +63,7 @@
         display3(){
             var str=""
             for(var i=0;i<this.res.length;i++){
-                str +=`<li  index="${this.res[i].sId}>
+                str +=`<li  index="${this.res[i].sId}">
                         <a href="#" ><img src="${this.res[i].img}" alt=""></a>
                         <div>
                             <em>${this.res[i].reffal}</em>
@@ -75,7 +77,7 @@
         display4(){
             var str=""
             for(var i=0;i<this.res.length;i++){
-                str +=`<li index="${this.res[i].sId}>
+                str +=`<li index="${this.res[i].sId}">  
                             <a href="#" class="well-i"><img src="${this.res[i].img}" alt=""></a>
                                 <div>
                                     <em>${this.res[i].reffal}</em>
@@ -86,8 +88,30 @@
             }
             this.well.innerHTML=str;   
         }
+        addEvent(){
+            var that=this
+            this.cont.addEventListener("click",function(eve){
+                var e=eve||window.event;
+                var target=e.target||e.srcElement;
+                // console.log(1);
+                // console.log(target);
+                
+                if(target.className == "qq"){
+                    // console.log(target.className)
+                    
+                    that.id=target.parentNode.parentNode.getAttribute("index");
+                    console.log(that.id);
+                    console.log(1)
+                    
+                    
+                    that.setCookie()
+                    
+                }
+            })
+        }
         setCookie(){
             //读取cookie
+            // console.log(cookieGet("goodsDEcookie"))
             this.goods=cookieGet("goodsDEcookie") ? 
                          JSON.parse(cookieGet("goodsDEcookie")):[];
 
