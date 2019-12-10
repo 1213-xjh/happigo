@@ -50,7 +50,7 @@
         }
         move(e){
             var l = e.clientX - this.ct.offsetLeft - this.sSpan.offsetWidth/2;
-            var t = e.clientY - this.ct.offsetTop ;
+            var t = e.clientY - this.ct.offsetTop;
             // console.log(this.ct.offsetTop)
 
             if(l<0) l=0;
@@ -74,6 +74,72 @@
             this.bBox.style.display = "none";
         }
     }
-    
     new Magnifier();
+    
+    class List{
+        constructor(){
+            this.cont=document.getElementById("main");
+            this.url="http://localhost/json/details.json";
+            this.load();
+            this.addEvent()
+        }
+        load(){
+            var that=this
+            ajaxGet(this.url,function(res){
+                that.res=JSON.parse(res);
+                that.display() 
+            })
+        }
+        display(){
+            var str=""
+            for(var i=0;i<this.res.length;i++){
+                str +=`<div class="box" index="${this.res[i].sId}">
+                    <img src="${this.res[i].img}" alt="">
+                    <p>${this.res[i].name}</p>
+                    <span>${this.res[i].price}</span>
+                    <em class="addcar">加入购物车</em></div>
+                    `
+            }
+            this.cont.innerHTML=str;
+        }
+        addEvent(){
+            var that=this
+            this.cont.addEventListener("click",function(eve){
+                var e=eve||window.event;
+                var target=e.target||e.srcElement;
+                if(target.className=="addcar"){
+                    that.id=target.parentNode.getAttribute("index");
+                    that.setCookie()
+                }
+            })
+        }
+        setCookie(){
+            //读取cookie
+            this.goods=cookieGet("goodsDEcookie") ? 
+                         JSON.parse(cookieGet("goodsDEcookie")):[];
+
+            if(this.goods.length<1){
+                this.goods.push({
+                    id:this.id,
+                    num:1
+                })
+            }else{
+                var onoff=true;
+                for(var i=0;i<this.goods.length;i++){
+                    if(this.goods[i].id===this.id){
+                        this.goods[i].num++;
+                        onoff=false
+                    }
+                }
+                if(onoff){
+                    this.goods.push({
+                        id:this.id,
+                        num:1
+                    })
+                }
+            }
+            cookieSet("goodsDEcookie",JSON.stringify(this.goods) )
+        }
+    }
+    new List;
 })()
