@@ -81,7 +81,7 @@
 			that.find(".list").children().css({
 				background:"rgba(200,200,200,0.6)"
 			}).eq(that._obj_.index).css({
-				background:"red"
+				background:"#3399ff"
 			})
 		}
 		
@@ -98,29 +98,29 @@
 //			4-1.创建小按钮
 			var str = "";
 			for(var i=0;i<options.items.length;i++){
-				str += `<li>${i+1}</li>`;
+				str += `<li></li>`;
 			}
 //			4-2.创建小按钮的框,并设置框和小按钮的样式
 			$("<ul class='list'>").html(str).appendTo(this).css({
-				width:"100%",
-				height:30,
+				width:"500px",
+				height:"10",
 				display:"flex",
 				position:"absolute",
-				left:0,
-				bottom:0,
+				left:500,
+				bottom:10,
 				margin:0,
 				padding:0,
 				listStyle:"none"
 			}).children().css({
 				flex:1,
-				borderLeft:"solid 1px black",
-				borderRight:"solid 1px black",
+				marginLeft:"10px",
+				marginRight:"10px",
 				background:"rgba(200,200,200,0.6)",
 				lineHeight:"30px",
 				textAlign:"center",
 				cursor:"pointer"
 			}).eq(this._obj_.index).css({
-				background:"red"
+				background:"#3399ff"
 			});
 //			4-3.给小按钮添加事件
 			this.find(".list").children("li").click(function(){
@@ -139,7 +139,7 @@
 				}
 //				4-5.设置小按钮的当前项
 				$(this).css({
-					background:"red"
+					background:"#3399ff"
 				}).siblings().css({
 					background:"rgba(200,200,200,0.6)"
 				})

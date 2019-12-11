@@ -1,5 +1,5 @@
 .margin {
-  width: 1090px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -324,6 +324,109 @@
 
 #nav .nav-c li a:hover {
   color: #DF0010;
+}
+
+#fix {
+  height: 9000px;
+}
+
+#fix .fix-t {
+  height: 57px;
+  line-height: 57px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#fix .fix-t a {
+  color: #666666;
+  font-size: 14px;
+}
+
+#fix .fix-t span {
+  color: #666666;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+#fix .fix-box {
+  margin-top: 18px;
+  width: 100%;
+}
+
+#fix .fix-box .box-head {
+  background-color: #fbfbfb;
+  border: 1px solid #e4e4e4;
+  height: 40px;
+  line-height: 40px;
+}
+
+#fix .fix-box .box-head .box-label {
+  float: left;
+  padding-right: 0px;
+  text-align: center;
+  width: 86px;
+  border-right: 1px solid #e4e4e4;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+#fix .fix-box .box-head ul {
+  float: left;
+  padding-left: 20px;
+}
+
+#fix .fix-box .box-head ul li {
+  float: left;
+  text-align: center;
+  padding-right: 30px;
+  color: #999;
+}
+
+#fix .fix-b {
+  width: 100%;
+}
+
+#fix .fix-b .fix-ul {
+  width: 100%;
+}
+
+#fix .fix-b .fix-ul li {
+  border: 1px solid #e4e4e4;
+  float: left;
+  margin: 5px 5px 18px 0px;
+  padding: 0 0 15px;
+  width: 291px;
+  height: 360px;
+  position: relative;
+}
+
+#fix .fix-b .fix-ul li img {
+  width: 290px;
+  height: 290px;
+}
+
+#fix .fix-b .fix-ul li p {
+  font-size: 13px;
+  color: #333;
+  text-indent: 15px;
+}
+
+#fix .fix-b .fix-ul li span {
+  font: 20px/33px "";
+  color: #df0010;
+  margin-left: 15px;
+}
+
+#fix .fix-b .fix-ul li i {
+  text-decoration: line-through;
+  font: 14px/22px "";
+  color: #969696;
+  margin-left: 13px;
+}
+
+#fix .fix-b .fix-ul li .noborder {
+  margin-right: 0;
 }
 
 #footer {
