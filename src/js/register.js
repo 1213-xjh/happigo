@@ -2,7 +2,7 @@
     class Register{
         constructor(){
             this.user=document.getElementById("user_name");
-            this.pass=document.getElementById("password");
+            this.pass=document.getElementById("pass1");
             this.reg=document.getElementById("reg");
             this.span=document.querySelector(".exist")
             this.addEvent();
@@ -33,7 +33,7 @@
                     return val.user===this.u;
                 });
                 if(type){
-                    this.span.innerHTML="用户名已注册";
+                    this.span.innerHTML="手机号已注册";
                 }else{
                     this.Msg.push({
                         user:this.u,

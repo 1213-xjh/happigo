@@ -27,13 +27,13 @@
 
 .register {
   background: url(../img/banner1.jpg);
-  height: 400px;
+  height: 500px;
   position: relative;
 }
 
 .register .happy {
   width: 367px;
-  height: 300px;
+  height: 400px;
   position: absolute;
   left: 200px;
   top: 25px;
