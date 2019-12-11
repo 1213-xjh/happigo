@@ -28,6 +28,8 @@
             this.display();
         }
         display(){
+            console.log(this.allcheck.checked);
+            
             var str="";
             for(var i=0;i<this.res.length;i++){
                 for(var j=0;j<this.goods.length;j++){
@@ -42,7 +44,7 @@
                         var sub=parseInt(this.res[i].price)*this.goods[j].num
                         str += `<tr index="${this.res[i].sId}">
                                     <td><input class="check" type="checkbox" ${this.check}></td>
-                                    <td><img src="${this.res[i].img}"></td>
+                                    <td><img src="${this.res[i].img}" ></td>
                                     <td>${this.res[i].name}</td>
                                     <td>${this.res[i].price}</td>
                                     <td><input type="number" min="1" value="${this.goods[j].num}" class="int"></td>
@@ -88,6 +90,7 @@
                     that.id=target.parentNode.parentNode.getAttribute("index")
                     target.parentNode.parentNode.lastElementChild.previousElementSibling.innerHTML=
                     target.value*target.parentNode.parentNode.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML
+                    console.log(target.value);
                     
                     that.changCookie(function(i){
                         that.goods[i].num=target.value;
@@ -152,8 +155,6 @@
                 this.allcheck.checked=false;
             }
         }
-        
-
     }
     new car()
 })()

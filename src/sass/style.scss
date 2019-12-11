@@ -7,32 +7,21 @@ $headerColor:#f5f5f5;
     border-top: 1px solid #b6b6b6;
 }
 }
-.top{
-    background: $headerColor;
-    width: 100%;
-    height: 49px;
-    margin: 0 auto; 
-    float:left;
-}
-.top{
-    color: #333;
-    .t-l{float: left;font: 15px/49px "";
+.top{background: $headerColor;width: 100%;height: 49px;margin: 0 auto;float:left;color: #333;
+.t-l{float: left;font: 15px/49px "";
         span{height:36px;display:inline-block;}
         .a-log{color: #333;padding:0 10px 0 20px}
         .a-reg{color: #333;}
     }
     .t-r{float:right;
-        ul li{float: left;font: 15px/49px "";
-                height: 36px;
-                line-height: 36px;
-                position: relative;
+        ul li{float: left;font: 15px/49px "";height: 36px;line-height: 36px;position: relative;
                 padding:0 10px;
-            }
-        ul li a{font: 15px/49px "";}
-        ul li span{font: 15px/49px "";display: inline-block}
-        ul li .tel_icon{background:url(../img/icon_list.png) no-repeat 0 -38px;
-            width:14px;height:13px;margin: 0 4px 0 10px;
-            display: inline-block;}
+                a{font: 15px/49px "";}
+                span{font: 15px/49px "";display: inline-block}
+                .tel_icon{background:url(../img/icon_list.png) no-repeat 0 -38px;
+                    width:14px;height:13px;margin: 0 4px 0 10px;
+                    display: inline-block;}
+            } 
     }  
 }
 .header{width:100%;height:165px;
@@ -58,9 +47,7 @@ $headerColor:#f5f5f5;
                 background: -webkit-linear-gradient(0deg,rgba(244,72,20,1) 0%,rgba(241,19,35,1) 100%);
                 border-top-right-radius: 35px;
                 border-bottom-right-radius: 35px;}
-            .search-key{color: #8c8c8c;
-                padding-left: 14px;float: left;height: 25px;overflow: hidden;
-                font:13px/25px "";
+            .search-key{color: #8c8c8c;padding-left: 14px;float: left;height: 25px;overflow: hidden;font:13px/25px "";
                 a{padding: 0 5px 0 0;color: #8c8c8c;font-size:13px;}}
             }
     .h_c_right{float: right;position: relative;margin-top: 19px;z-index: 3;
@@ -93,9 +80,6 @@ $headerColor:#f5f5f5;
                         dd{float: left;font: 18px/30px "";color: #666;margin-top: 9px;margin-left: 17px;}
                     }
                 }
-                // .pro-r{
-                //     img{}
-                // }
             }
             }
             .active{background:#fff;
@@ -105,7 +89,6 @@ $headerColor:#f5f5f5;
             }    
         } 
     }
-    // .nav-list{width: 855px;height:500px;background: #fff;position: absolute;left: 170px;top:207px;z-index: 999;}
     .nav-c{float:left;
         li{float:left;width:120px;height:40px ;
             a{display:block;color:#333;font:15px/40px "";padding:0 30px;}
@@ -131,8 +114,7 @@ $headerColor:#f5f5f5;
                 em{float: right;font: 18px/38px "";width:100px;height:38px;border-radius: 16px;background:#df0010;color: #fff;text-align: center;margin-right: 13px;}
                 i{text-decoration:line-through;font:14px/22px "";color:#969696;margin-left: 13px;}
         }
-        }
-        
+        }  
     }
 }
 #recom{height: 564px;padding:0 0 16px 0;background: #f3f3f3;
@@ -152,7 +134,6 @@ $headerColor:#f5f5f5;
             }   
         }  
     }
-    // li:hover{border:solid 1px #DF0010;}
 }
 #activity{height: 1000px;background: #f3f3f3;
     .act-t{
@@ -241,18 +222,6 @@ $headerColor:#f5f5f5;
         }
     }
 }
-.floor{
-    position: fixed;
-    z-index: 100;
-    right: 10px;
-    top:50%;
-    height: 200px;
-    width: 40px;
-    font-size: 16px;
-    ul li{
-        border-bottom: 2px solid #fff;
-        background: #aaa;
-        color: #f26a18;
-        text-align: center;
-    }
-}
+// .floor{position: fixed;z-index: 100;right: 10px;top:50%;height: 200px;width: 40px;font-size: 16px;
+//     ul li{border-bottom: 2px solid #fff;background: #aaa;color: #f26a18;text-align: center;}
+// }
