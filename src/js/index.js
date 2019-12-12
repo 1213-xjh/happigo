@@ -100,8 +100,8 @@
                     // console.log(target.className)
                     
                     that.id=target.parentNode.parentNode.getAttribute("index");
-                    console.log(that.id);
-                    console.log(1)
+                    // console.log(that.id);
+                    // console.log(1)
                     
                     
                     that.setCookie()

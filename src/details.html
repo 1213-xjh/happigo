@@ -781,4 +781,22 @@
 <script src="js/public.js"></script>
 <script src="libs/cookie.js"></script>
 <script src="libs/ajax.js"></script>
+<script>
+$("h4").on("mouseover",function(){
+    $(this).next("ul").stop().show();
+})
+$(".ul-all").on("mouseleave",function(){
+    $(this).stop().hide();
+    // console.log(1); 
+})
+
+$(".ul-all").children("li").on("mouseover",function(){
+    $(this).addClass("active");
+    $(this).find("div").stop().show();
+});
+$(".ul-all").children("li").on("mouseleave",function(){
+    $(this).removeClass("active");
+    $(this).find("div").stop().hide();
+})
+</script>
 </html>

@@ -14,13 +14,13 @@
             })
         }
         display(){
-            var str=""
+            var str="";
             for(var i=0;i<this.res.length;i++){
                 str +=`<li index="${this.res[i].sId}>
                             <a href="../details.html"><img src="${this.res[i].img}"></a>
                             <span>￥</span><span>${this.res[i].price}</span><i>￥${this.res[i].except}</i>
                             <div class="order">
-                                <p><a href="../details.html">${this.res[i].name}</a></p>
+                                <p><a href="../car.html">${this.res[i].name}</a></p>
                             </div>
                         </li>`
             }

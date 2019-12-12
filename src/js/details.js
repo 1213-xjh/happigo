@@ -1,6 +1,7 @@
 ;(function(){
     class Magnifier{
         constructor(){
+            this.c = document.querySelector(".c-t-l")
             this.sBox = document.querySelector(".sBox");
             this.ct=document.querySelector(".c-t-l")
             this.sSpan = document.querySelector(".sBox span");
@@ -49,9 +50,10 @@
             this.bImgH = this.bImg.offsetHeight;
         }
         move(e){
-            var l = e.clientX - this.ct.offsetLeft - this.sSpan.offsetWidth/2;
-            var t = e.clientY - this.ct.offsetTop;
-            // console.log(this.ct.offsetTop)
+
+            var l = e.clientX - this.c.offsetLeft - this.sSpan.offsetWidth/2;
+            var t = e.clientY - this.c.offsetTop/2;
+            // console.log(e.clientY,this.c.offsetTop,this.sSpan.offsetHeight)
 
             if(l<0) l=0;
             if(t<0) t=0;

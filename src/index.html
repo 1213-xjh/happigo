@@ -104,7 +104,7 @@
                 <div class="margin clear">
                     <div class="nav-l">
                         <h4><i class="iconfont b_down"></i>所有分类</h4>
-                        <ul class="ul-all">
+                        <ul class="ul-all" >
                                 <li class="list te1">
                                     <a href="#"><i class="i1"></i>个护美妆</a>
                                     <div class="pro">
@@ -739,7 +739,7 @@
 $("h4").on("mouseover",function(){
     $(this).next("ul").stop().show();
 })
-$(".ul-all").on("mousleave",function(){
+$(".ul-all").on("mouseleave",function(){
     $(this).stop().hide();
     // console.log(1); 
 })
@@ -748,10 +748,11 @@ $(".ul-all").children("li").on("mouseover",function(){
     $(this).addClass("active");
     $(this).find("div").stop().show();
 });
-$(".ul-all").children("li").on("mouseout",function(){
+$(".ul-all").children("li").on("mouseleave",function(){
     $(this).removeClass("active");
     $(this).find("div").stop().hide();
 })
+
 
 
 $(".nav li").click(function(){

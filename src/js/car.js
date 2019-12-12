@@ -17,7 +17,6 @@
         load(){
             ajaxGet(this.url,(res)=>{
                 this.res=JSON.parse(res);
-                
                 this.getcookie();
                 this.checkbox();
             })
@@ -28,8 +27,7 @@
             this.display();
         }
         display(){
-            console.log(this.allcheck.checked);
-            
+            // console.log(this.allcheck.checked);
             var str="";
             for(var i=0;i<this.res.length;i++){
                 for(var j=0;j<this.goods.length;j++){
@@ -99,7 +97,7 @@
             })
             this.allcheck.onclick=function(){
                 var acheck=document.querySelectorAll(".check");
-                // console.log(acheck)
+                // console.log(acheck);
                     for(var i=0;i<acheck.length;i++){
                         if(this.checked==true){
                             acheck[i].checked=true;
