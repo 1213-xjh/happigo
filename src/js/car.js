@@ -61,7 +61,6 @@
             this.smon=0;
             this.snumq=0;
              this.tbody.innerHTML=str;
-             
         }
         addEvent(){
             var that=this;
